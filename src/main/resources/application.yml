@@ -1,0 +1,17 @@
+management:
+  endpoint:
+    env:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+server:
+  port: 3333
+spring:
+  application:
+    name: hdfc-stocks
+  boot:
+    admin:
+      client:
+        url: http://localhost:4444/
